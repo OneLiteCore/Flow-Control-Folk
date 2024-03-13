@@ -4,7 +4,7 @@ local pipe = data.raw["pipe"]["pipe"]
 -- Pipe Elbow ****************************************************************************
 pipe_elbow = util.table.deepcopy(data.raw["storage-tank"]["storage-tank"])
 pipe_elbow.name = "pipe-elbow"
-pipe_elbow.icon = "__Flow-Control-Folk__/graphics/icon/pipe-elbow.png"
+pipe_elbow.icon = "__flow-control-folk__/graphics/icon/pipe-elbow.png"
 pipe_elbow.icon_size = 64
 pipe_elbow.icon_mipmaps = nil
 pipe_elbow.minable = pipe.minable
@@ -51,7 +51,7 @@ pipe_elbow.working_sound = nil
 -- Pipe Junction *************************************************************************
 pipe_junction = util.table.deepcopy(pipe_elbow)
 pipe_junction.name = "pipe-junction"
-pipe_junction.icon = "__Flow-Control-Folk__/graphics/icon/pipe-junction.png"
+pipe_junction.icon = "__flow-control-folk__/graphics/icon/pipe-junction.png"
 pipe_junction.selection_box = {{-0.5, -0.35}, {0.5, 0.5}}
 pipe_junction.fluid_box.pipe_connections =
 {
@@ -60,7 +60,7 @@ pipe_junction.fluid_box.pipe_connections =
   { position = {-1, 0} }
 }
 -- pipe_junction.pictures.picture.sheet.filename =
-  -- "__Flow-Control-Folk__/graphics/entity/pipes/pipe-junction.png"
+  -- "__flow-control-folk__/graphics/entity/pipes/pipe-junction.png"
 pipe_junction.pictures =
 {
   picture =
@@ -79,7 +79,7 @@ pipe_junction.pictures =
 -- Pipe Straight *************************************************************************
 pipe_straight = util.table.deepcopy(pipe_elbow)
 pipe_straight.name = "pipe-straight"
-pipe_straight.icon = "__Flow-Control-Folk__/graphics/icon/pipe-straight.png"
+pipe_straight.icon = "__flow-control-folk__/graphics/icon/pipe-straight.png"
 pipe_straight.selection_box = {{-0.35, -0.5}, {0.35, 0.5}}
 pipe_straight.fluid_box.pipe_connections =
 {
@@ -106,7 +106,7 @@ pipe_straight.pictures =
 -- Check Valve ***************************************************************************
 check_valve = util.table.deepcopy(pipe_straight)
 check_valve.name = "check-valve"
-check_valve.icon = "__Flow-Control-Folk__/graphics/icon/check-valve.png"
+check_valve.icon = "__flow-control-folk__/graphics/icon/check-valve.png"
 check_valve.selection_box = {{-0.5, -0.5}, {0.5, 0.5}}
 check_valve.minable = {mining_time = 0.1, result = "check-valve"}
 check_valve.placeable_by = nil
@@ -124,12 +124,12 @@ check_valve.pictures.picture =
 {
   sheet =
   {
-    filename = "__Flow-Control-Folk__/graphics/entity/check-valve/check-valve.png",
+    filename = "__flow-control-folk__/graphics/entity/check-valve/check-valve.png",
     frames = 4,
     width = 64,
     height = 64,
     hr_version = {
-      filename = "__Flow-Control-Folk__/graphics/entity/check-valve/hr-check-valve.png",
+      filename = "__flow-control-folk__/graphics/entity/check-valve/hr-check-valve.png",
       frames = 4,
       width = 128,
       height = 128,
@@ -144,20 +144,20 @@ check_valve.circuit_wire_max_distance = data.raw["storage-tank"]["storage-tank"]
 -- Overflow Valve ************************************************************************
 overflow_valve = util.table.deepcopy(check_valve)
 overflow_valve.name = "overflow-valve"
-overflow_valve.icon = "__Flow-Control-Folk__/graphics/icon/overflow-valve.png"
+overflow_valve.icon = "__flow-control-folk__/graphics/icon/overflow-valve.png"
 overflow_valve.minable.result = "overflow-valve"
 overflow_valve.fluid_box.base_level = 0.8
-overflow_valve.pictures.picture.sheet.filename = "__Flow-Control-Folk__/graphics/entity/overflow-valve/overflow-valve.png"
-overflow_valve.pictures.picture.sheet.hr_version.filename = "__Flow-Control-Folk__/graphics/entity/overflow-valve/hr-overflow-valve.png"
+overflow_valve.pictures.picture.sheet.filename = "__flow-control-folk__/graphics/entity/overflow-valve/overflow-valve.png"
+overflow_valve.pictures.picture.sheet.hr_version.filename = "__flow-control-folk__/graphics/entity/overflow-valve/hr-overflow-valve.png"
 
 -- Underflow Valve ***********************************************************************
 underflow_valve = util.table.deepcopy(overflow_valve)
 underflow_valve.name = "underflow-valve"
-underflow_valve.icon = "__Flow-Control-Folk__/graphics/icon/underflow-valve.png"
+underflow_valve.icon = "__flow-control-folk__/graphics/icon/underflow-valve.png"
 underflow_valve.minable.result = "underflow-valve"
 underflow_valve.fluid_box.base_level = -0.8
-underflow_valve.pictures.picture.sheet.filename = "__Flow-Control-Folk__/graphics/entity/underflow-valve/underflow-valve.png"
-underflow_valve.pictures.picture.sheet.hr_version.filename = "__Flow-Control-Folk__/graphics/entity/underflow-valve/hr-underflow-valve.png"
+underflow_valve.pictures.picture.sheet.filename = "__flow-control-folk__/graphics/entity/underflow-valve/underflow-valve.png"
+underflow_valve.pictures.picture.sheet.hr_version.filename = "__flow-control-folk__/graphics/entity/underflow-valve/hr-underflow-valve.png"
 
 data:extend(
 {
