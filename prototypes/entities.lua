@@ -155,7 +155,7 @@ underflow_valve = util.table.deepcopy(overflow_valve)
 underflow_valve.name = "underflow-valve"
 underflow_valve.icon = "__Flow Control__/graphics/icon/underflow-valve.png"
 underflow_valve.minable.result = "underflow-valve"
-underflow_valve.fluid_box.base_level = -0.2
+underflow_valve.fluid_box.base_level = -0.8
 underflow_valve.pictures.picture.sheet.filename = "__Flow Control__/graphics/entity/underflow-valve/underflow-valve.png"
 underflow_valve.pictures.picture.sheet.hr_version.filename = "__Flow Control__/graphics/entity/underflow-valve/hr-underflow-valve.png"
 
