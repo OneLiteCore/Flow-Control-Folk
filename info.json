@@ -1,9 +1,9 @@
 {
-  "name": "Flow Control",
+  "name": "flow control folk",
   "version": "3.1.4",
-  "title": "Flow Control",
-  "author": "GotLag",
-  "homepage": "https://forums.factorio.com/viewtopic.php?f=94&t=20645",
+  "title": "Flow Control Folk",
+  "author": "Sailor2077",
+  "homepage": "https://github.com/OneLiteCore/Flow-Control-Folk",
   "description": "Adds pipes with restricted connections, and several useful valves.",
   "factorio_version": "1.1",
   "dependencies": [ "base >= 1.1.67" ]
